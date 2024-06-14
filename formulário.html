@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Exemplo</title>  
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --green: #48e600;
+        }
+        body {
+            background-color: var(--black);
+            color: white;
+            font-family: monospace, Arial;
+            font-size: 20px;
+        }
+        .light-theme {
+            background-color: var(--white);
+            color: var(--black);
+        }
+        #btn {
+            margin-left: 30%;
+            color: var(--green);
+            box-sizing: border-box;
+            height: 70px;
+            width: 70px;
+            font-size: 22px;
+            border-radius: 50%;
+            align-items: center;
+        }
+        ul {
+           list-style-type: circle;
+           padding: 0;
+           
+        }
+        li{
+           display: flex;
+           float: left;
+           padding: 9px;
+           margin-bottom: 34px;
+           
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <h1>Mudança de tema de claro para escuro</h1>
+    <p>Aprender a manipulação com JavaScript</p>
+     
+    <ul>
+        <li>JavaScript</li>
+        <li></span>HTML</span></li>
+        <li>CSS</li>
+        <li>PHP</li>
+    </ul>
+    <button id="btn" onclick="mudarTema()">Click</button>
+    
+    <script>
+        function mudarTema() {
+            document.body.classList.toggle('light-theme');
+        }
+       
+    
+    </script>
+        
+</body>
+</html>
